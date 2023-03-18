@@ -1,4 +1,4 @@
-package projeto_pi;
+package Projeto_pi;
 import java.util.Scanner;
 public class projeto_PI {
 	 
@@ -14,7 +14,7 @@ public class projeto_PI {
 		      int temas;
 
 		      limpatela();
-		      System.out.printf("\n\nSelecione o tema desejado\n\n ==============   1-ENGENHARIA DE SOFTWARE   ===============\n\n   2-TEMA2     |       3-TEMA3         |       4-TEMA4\n\n0-VOLTAR\n\nDigite sua opção: ");
+		      System.out.printf("\n\nSelecione o tema desejado\n\n ==============   1-ENGENHARIA DE SOFTWARE   ===============\n\n   2-ESPORTES     |       3-TEMA3         |       4-TEMA4\n\n0-VOLTAR\n\nDigite sua opção: ");
 		      temas = ler.nextInt();
 		      
 		      switch (temas) {
