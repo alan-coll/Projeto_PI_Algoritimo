@@ -28,123 +28,14 @@ public class projeto_PI {
 		        break;
 		      
 		      case 2:
-            int resposta = 0;  
-		        int acertos = 0;
-              limpatela();
-		        System.out.printf("\n\nVoce selecionou ESPORTES \n\n");
-            
-              do { 
-		               System.out.printf("QUESTÃO 1°\nAnalise as afirmativas a seguir:\nI. O voleibol é uma modalidade esportiva rica em regras. Nesse esporte, não é permitido, por exemplo, fazer a bola passar sobre a rede, utilizar luvas durante o jogo e nem mesmo formar duplas para uma competição.\nII. A prática do vôlei não exige a realização de movimentos dos membros superiores, pois os movimentos repetitivos praticados pelos atletas desse esporte compreendem apenas os movimentos dos membros inferiores. Marque a alternativa CORRETA:\n1-   As duas afirmativas são verdadeiras\n2 - A afirmativa I é verdadeira, e a II é falsa.\n3 - A afirmativa II é verdadeira, e a I é falsa.\n4 - As duas afirmativas são falsas. RESPOSTA CERTA\n\nDigite a resposta certa: ");     
-		             resposta = ler.nextInt();
-		             if (resposta == 4)  {
-		               acertos++;
-		               respostacerta();
-		               }
-		                else if (resposta >4 || resposta == 0)  {
-		                 limpatela();
-		                 respostainvalida();
-		                 } 
-		                else { 
-			            	 respostaerrada(); 
-			            	 }
-		               } while (resposta >4 || resposta == 0);
-              
-		        do {
-              System.out.printf("\n\nQUESTÃO 2°\nO tênis de mesa constitui, em sua partida, de sets de:\n1 -  7 pontos.\n2 -  9 pontos.\n3 -  11 pontos. RESPOSTA CERTA\n4 -  13 pontos.\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 3)  {
-		           acertos++;
-               respostacerta();
-		          }
-             else if (resposta >4 || resposta == 0) {
-               limpatela();
-               respostainvalida();
-             }
-              else {
-                respostaerrada();
-              }
-            } while (resposta >4 || resposta == 0);
-              
-		        do {
-              System.out.printf("\n\nQUESTÃO  3°\nA prática do futebol de campo demanda uma série de equipamentos obrigatórios de acordo com o Manual de Regras de Futebol da FIFA 2021/2022. Dentre as opções a seguir, assinale a que apresenta o equipamento que não é obrigatório.\n1 - Caneleira.\n2 - Calçado.\n3 - Camiseta sem manga. RESPOSTA CERTA\n4 - Calções.\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 3)  {
-		           acertos++;
-               respostacerta();
-		          }
-             else if (resposta >4 || resposta == 0) {
-               limpatela();
-               respostainvalida();
-             }
-              else {
-                respostaerrada();
-              }
-            } while (resposta >4 || resposta == 0);
-              
-		       do {
-              System.out.printf("\n\nQUESTÃO 4°\nA Capoeira é considerada por seus praticantes como luta, dança, jogo, arte, música, expressão corporal e cultural, dentre outras. Acerca dos fatos históricos que envolvem a prática de Capoeira, é INCORRETO dizer que foi:\n1 - considerada crime previsto no Código Penal brasileiro.\n2 - homologada pelo Ministério da Educação e Cultura como modalidade desportiva.\n3 - incluída pelo Comitê Olímpico Internacional no programa dos Jogos Olímpicos de Verão.  RESPOSTA CERTA\n4 - registrada pelo Instituto do Patrimônio Histórico e Artístico Nacional como patrimônio cultural brasileiro.\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 3)  {
-		           acertos++;
-               respostacerta();
-		          }
-             else if (resposta >4 || resposta == 0) {
-               limpatela();
-               respostainvalida();
-             }
-              else {
-                respostaerrada();
-              }
-            } while (resposta >4 || resposta == 0);
-              
-		        do {
-              System.out.printf("\n\nQUESTÃO 5°\nO futebol, esporte que é considerado a paixão nacional e, sem dúvidas, o mais popular do mundo, começou a ser praticado:\n1 - Na Inglaterra. RESPOSTA CERTA\n2 - Na França.\n3 - Nos Estados Unidos.\n4 - No Brasil.\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 1)  {
-		           acertos++;
-               respostacerta();
-		          }
-             else if (resposta >4 || resposta == 0) {
-               limpatela();
-               respostainvalida();
-             }
-              else {
-                respostaerrada();
-              }
-            } while (resposta >4 || resposta == 0);
-              
-		        System.out.printf("\n\nQuestão6\n\n1-respostacerta\n2-resposta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 1)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão7\n\n1-resposta\n2-resposta\n3-resposta\n4-respostacerta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 4)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão8\n\n1-resposta\n2-respostacerta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 2)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão9\n\n1-resposta\n2-resposta\n3-resposta\n4-respostacerta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 4)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão10\n\n1-resposta\n2-respostacerta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 2)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nVoce acertou "+ acertos +  " de 10");
+            caseEsportes();
 		        System.out.printf("Fim do quiz.\n\n 1 - Voltar ao menu\n 0 - Sair\n\nDigite sua opção: ");
 		        opcao = ler.nextInt();
 		        break;
-		      
+              
 		      case 3:
-		         acertos = 0;
+		         int resposta = 0;
+             int acertos = 0;
 		         System.out.printf("\n\nVoce selecionou tema3 \n\nQuestão1\n\n1-resposta\n2-respostacerta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
 		         resposta = ler.nextInt();
 		         if (resposta == 2)  {
@@ -268,7 +159,8 @@ public class projeto_PI {
 		  } while (opcao !=0);
 		 
 		}
-		  public static void limpatela() { System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"); }
+		  public static void limpatela() { 
+System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"); }
 		  public static void respostacerta() { 
         System.out.println("\nRESPOSTA CERTA"); }
 		  public static void respostaerrada() { 
@@ -453,6 +345,186 @@ public class projeto_PI {
 		          }
 		        if (acertos <5)  {
 		           System.out.printf("\n\nVoce acertou "+ acertos+ " de 10" + "\nQue pena, voce tem que estudar mais, esta passando vergonha!");
+		          }
+      }
+      public static void caseEsportes()  {
+        Scanner ler = new Scanner(System.in);
+            int resposta = 0;  
+		        int acertos = 0;
+              limpatela();
+		        System.out.printf("\n\nVoce selecionou ESPORTES \n\n");
+            
+              do { 
+		               System.out.printf("QUESTÃO 1°\nAnalise as afirmativas a seguir:\nI. O voleibol é uma modalidade esportiva rica em regras. Nesse esporte, não é permitido, por exemplo, fazer a bola passar sobre a rede, utilizar luvas durante o jogo e nem mesmo formar duplas para uma competição.\nII. A prática do vôlei não exige a realização de movimentos dos membros superiores, pois os movimentos repetitivos praticados pelos atletas desse esporte compreendem apenas os movimentos dos membros inferiores. Marque a alternativa CORRETA:\n1-   As duas afirmativas são verdadeiras\n2 - A afirmativa I é verdadeira, e a II é falsa.\n3 - A afirmativa II é verdadeira, e a I é falsa.\n4 - As duas afirmativas são falsas. RESPOSTA CERTA\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 4)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                 limpatela();
+		                 respostainvalida();
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO 2°\nO tênis de mesa constitui, em sua partida, de sets de:\n1 -  7 pontos.\n2 -  9 pontos.\n3 -  11 pontos. RESPOSTA CERTA\n4 -  13 pontos.\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 3)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO  3°\nA prática do futebol de campo demanda uma série de equipamentos obrigatórios de acordo com o Manual de Regras de Futebol da FIFA 2021/2022. Dentre as opções a seguir, assinale a que apresenta o equipamento que não é obrigatório.\n1 - Caneleira.\n2 - Calçado.\n3 - Camiseta sem manga. RESPOSTA CERTA\n4 - Calções.\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 3)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		       do {
+              System.out.printf("\n\nQUESTÃO 4°\nA Capoeira é considerada por seus praticantes como luta, dança, jogo, arte, música, expressão corporal e cultural, dentre outras. Acerca dos fatos históricos que envolvem a prática de Capoeira, é INCORRETO dizer que foi:\n1 - considerada crime previsto no Código Penal brasileiro.\n2 - homologada pelo Ministério da Educação e Cultura como modalidade desportiva.\n3 - incluída pelo Comitê Olímpico Internacional no programa dos Jogos Olímpicos de Verão.  RESPOSTA CERTA\n4 - registrada pelo Instituto do Patrimônio Histórico e Artístico Nacional como patrimônio cultural brasileiro.\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 3)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO 5°\nO futebol, esporte que é considerado a paixão nacional e, sem dúvidas, o mais popular do mundo, começou a ser praticado:\n1 - Na Inglaterra. RESPOSTA CERTA\n2 - Na França.\n3 - Nos Estados Unidos.\n4 - No Brasil.\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 1)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO 6°\nО quе rерrеѕеntа о ѕímbоlо dоѕ сіnсо аnéіѕ dаѕ Оlіmрíаdаѕ?\n1 - Аѕ сіnсо соrеѕ рrіnсіраіѕ ехіѕtеntеѕ.2 - Оѕ сіnсоѕ соntіnеntеѕ hаbіtаdоѕ nо mundо. RESPOSTA CERTA\n3 - Оѕ сіnсоѕ рrіnсіраіѕ раíѕеѕ vеnсеdоrеѕ.\n4 - Аѕ сіnсо mаіоrеѕ nаçõеѕ dо mundо.\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 2)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO 7°\nQual país é o único que participou de todas as Copas do Mundo?\n1 - México\n2 - Alemanha\n3 - Espanha\n4 – Brasil RESPOSTA CERTA\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 4)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO 8°\nAs primeiras olimpíadas aconteceram em que país?\n1 - França\n2 - Inglaterra\n3 - Grécia RESPOSTA CERTA\n4 - Estados Unidos da América\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 3)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO 9°\nQue seleção venceu a Copa do Mundo, em 1998?\n1 - Brasil\n2 - França RESPOSTA CERTA\n3 - Alemanha\n4 – Argentina\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 2)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        do {
+              System.out.printf("\n\nQUESTÃO 10°\nQual o time mais famoso da cidade italiana de Turín?\n1 – Torino\n2 - Milan\n3 -  Lazio\n4 – Juventus RESPOSTA CERTA\n\nDigite a resposta certa: ");
+		        resposta = ler.nextInt();
+		        if (resposta == 4)  {
+		           acertos++;
+               respostacerta();
+		          }
+             else if (resposta >4 || resposta == 0) {
+               limpatela();
+               respostainvalida();
+             }
+              else {
+                respostaerrada();
+              }
+            } while (resposta >4 || resposta == 0);
+              
+		        if (acertos == 10)  {
+		        	System.out.printf("\n\nUau voce sabe tudo sobre esportes. Voce acertou todas!!!!");
+		          }
+		        if (acertos >5 && acertos <10)  {
+		           System.out.printf("\n\nMuito bem, voce é um especialista em esportes!!. Voce acertou "+ acertos +" de 10");
+		          }
+		        if (acertos ==5)  {
+		           System.out.printf("\n\nVoce acertou "+ acertos + " de 10."+" Voce esta na media mas pode melhorar." );
+		          }
+		        if (acertos <5)  {
+		           System.out.printf("\n\nVoce acertou "+ acertos+ " de 10" + "\nQue pena, voce tem que praticar mais esportes, esta passando vergonha!");
 		          }
       }
 }
