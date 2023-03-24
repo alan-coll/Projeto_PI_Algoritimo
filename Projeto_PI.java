@@ -582,12 +582,201 @@ System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 		           System.out.printf("\n\nVoce acertou "+ acertos+ " de 10" + "\nQue pena, voce tem que estudar mais História, esta passando vergonha!");
 		          }
       }
+      public static void caseConhecimentosGerais()  {
+             Scanner ler = new Scanner(System.in);
+             int resposta = 0;
+             int acertos = 0;
+		         limpatela();
+				      System.out.printf("\n\nVoce selecionou o tema CONHECIMENTOS GERAIS.");
+		    	   do { 
+		    		   
+		               System.out.printf("\n\nQuestão 1°\nQual a causa do terremoto que atingiu a Turquia e na Síria no dia 6 de fevereiro de 2023 e qual a sua magnitude?\n\n1 - movimentos de placas tectônicas e magnitute 7,8 RESPOSTA CERTA\n2 - tempestades fortes combinadas com terremotos submarinos e magnitude 8,7\n3 - erupções vulcânicas e magnitude 7,8\n4 - combinação de fatores climáticos e magnitude 7,8\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 1)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQuestão 2°\nO que é Crimeia?\n\n1 - tipo de conferência realizada entre líderes de organizações russas\n2 - nome dado ao conflito entre a Rússia e a Ucrânia\n3 - península localizada no sul da Ucrânia que em 2014 foi anexada ao território da Rússia RESPOSTA CERTA\n4 - conjunto das repúblicas da União Soviética\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 3)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 3°\nQual o lugar mais profundo dos oceanos?\n\n1 - Fossa de Bentley\n2 - Fossa de Tonga\n3 - Fossa de Java\n4 - Fossa das Marianas RESPOSTA CERTA\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 4)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 4°\nQual a maior operação militar da história, que contou com o deslocamento de 3,8 milhões de soldados?\n\n1 - Operação Tempestade no Deserto (Exército dos Estados Unidos na Guerra do Golfo)\n2 - Operação Overlord (Aliados na Segunda Guerra Mundial)\n3 - Operação Barbarossa (Países do Eixo na Segunda Guerra Mundial) RESPOSTA CERTA\n4 - Operação Downfall (Aliados na Segunda Guerra Mundial)\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 3)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 5°\nQual o maior planeta do sistema solar?\n\n1 – Marte\n2 – Saturno\n3 – Terra\n4 - Júpiter RESPOSTA CERTA\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 4)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 6°\nQual o monumento famoso pela sua inclinação?\n\n1 - Torre Eiffel\n2 – Esfinge\n3 - Estátua da Liberdade\n4 - Torre de Pisa RESPOSTA CERTA\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 4)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 7°\nQual o nome popular do cloreto de sódio?\n\n1 – Vinagre\n2 - Sal de cozinha RESPOSTA CERTA\n3 – Papel\n4 – Fermento\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 2)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 8°\nQue fruto nasce da oliveira?\n\n1 – Amêndoa\n2 – Abacate\n3 -  Azeitona RESPOSTA CERTA\n4 – Açaí\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 3)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 9°\nQual destas substâncias faz parte da composição do vidro?\n\n1 – Petróleo\n2 – Fibra\n3 – Celulose\n4 – Areia RESPOSTA CERTA\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 4)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        do { 
+		    		   
+		               System.out.printf("\n\nQUESTÃO 10°\nQual a montanha mais alta do Brasil?\n\n1 - Pico da Neblina RESPOSTA CERTA\n2 - Pico Paraná\n3 - Monte Roraima\n4 - Pico Maior de Friburgo\n\nDigite a resposta certa: ");     
+		             resposta = ler.nextInt();
+		             if (resposta == 1)  {
+		               acertos++;
+		               respostacerta();
+		               }
+		                else if (resposta >4 || resposta == 0)  {
+		                limpatela();
+		                 System.out.println("Resposta invalida digite novamente.");
+		                 } 
+		                else { 
+			            	 respostaerrada(); 
+			            	 }
+		               } while (resposta >4 || resposta == 0);
+              
+		        if (acertos == 10)  {
+		        	System.out.printf("\n\nUau voce sabe tudo. Voce acertou todas!!!!");
+		          }
+		        if (acertos >5 && acertos <10)  {
+		           System.out.printf("\n\nMuito bem, voce é um expert em Conhecimentos Gerais!!. Voce acertou "+ acertos +" de 10");
+		          }
+		        if (acertos ==5)  {
+		           System.out.printf("\n\nVoce acertou "+ acertos + " de 10."+" Voce esta na media mas pode melhorar." );
+		          }
+		        if (acertos <5)  {
+		           System.out.printf("\n\nVoce acertou "+ acertos+ " de 10" + "\nQue pena, voce tem que estudar mais, esta passando vergonha!");
+		          }
+      }
       public static void funcaoTemas()  {
         Scanner ler = new Scanner(System.in);
         int temas;
         int opcao = 0;
 		      limpatela();
-		      System.out.printf("\n\nSelecione o tema desejado\n\n ==============   1-ENGENHARIA DE SOFTWARE   ===============\n\n   2-ESPORTES     |       3-HISTÓRIA         |       4-TEMA4\n\n0-VOLTAR\n\nDigite sua opção: ");
+		      System.out.printf("\n\nSelecione o tema desejado\n\n ==============   1-ENGENHARIA DE SOFTWARE   ===============\n\n   2-ESPORTES     |       3-HISTÓRIA         |       4-CONHECIMENTOS GERAIS\n\n0-VOLTAR\n\nDigite sua opção: ");
 		      temas = ler.nextInt();
 		      
 		      switch (temas) {
@@ -611,61 +800,10 @@ System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 		         break;
 		      
 		      case 4:
-		         int resposta = 0;
-             int acertos = 0;
-		         System.out.printf("\n\nVoce selecionou tema4 \n\nQuestão1\n\n1-resposta\n2-respostacerta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		         resposta = ler.nextInt();
-		         if (resposta == 2)  {
-		            acertos++;
-		           }
-		        System.out.printf("\n\nQuestão2\n\n1-resposta\n2-resposta\n3-respostacerta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 3)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão3\n\n1-respostacerta\n2-resposta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 1)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão4\n\n1-resposta\n2-resposta\n3-resposta\n4-respostacerta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 4)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão5\n\n1-respostacerta\n2-resposta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 1)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão6\n\n1-resposta\n2-resposta\n3-respostacerta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 3)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão7\n\n1-resposta\n2-resposta\n3-resposta\n4-respostacerta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 4)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão8\n\n1-resposta\n2-respostacerta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 2)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão9\n\n1-respostacerta\n2-resposta\n3-resposta\n4-resposta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 1)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nQuestão10\n\n1-resposta\n2-resposta\n3-resposta\n4-respostacerta\n\nDigite a resposta certa: ");
-		        resposta = ler.nextInt();
-		        if (resposta == 4)  {
-		           acertos++;
-		          }
-		        System.out.printf("\n\nVoce acertou "+ acertos+ " de 10. \n\nFim do QUIZ \n\n1-voltar ao menu\n0-Sair\n\nDigite sua opção: ");
-		        opcao = ler.nextInt();
-		        break;
+		         caseConhecimentosGerais();
+              System.out.printf("Fim do quiz.\n\n 1 - Voltar ao menu\n\nDigite sua opção: ");
+		          opcao = ler.nextInt();
+		          break;
 		      }
       }
 }
