@@ -10,18 +10,21 @@ public class projeto_PI {
 
     int opcao = 0;
     do {
+      limpatela();
       System.out.printf(ANSI_BLUE +
-          "\n\n=============MENU DE OPÇÕES============\n\n\n    ======== ☛ 1- JOGAR ☚ ==========\n\n    ======== ☛ 2 - Instruções ☚ ====\n\n    ======== ☛ 3 - Creditos ☚ ======\n\n    ======== ☛ 0 - Sair ☚  ===========\n\n digite sua opção: "
+          "\n\n=============MENU DE OPÇÕES============\n\n\n    ======== ☛ 1- JOGAR ☚ ==========\n\n    ======== ☛ 2 - Créditos ☚\n\n    ======== ☛ 0 - Sair ☚  ===========\n\n digite sua opção: "
           + ANSI_BLUE);
       opcao = ler.nextInt();
 
-      if (opcao == 1) {
+      if (opcao == 1)  {
         funcaoTemas();
-      } else if (opcao == 2) {
-        System.out.println("voce selecionou Instruções");
-      } else if (opcao == 3) {
-        System.out.println("voce selecionou Creditos");
-      } else if (opcao > 3) {
+        opcao = ler.nextInt();
+      } 
+      else if (opcao == 2)  {
+        funcaoCreditos();
+        opcao = ler.nextInt();
+      } 
+      else if (opcao > 2) {
         System.out.printf(ANSI_RED + "\n\nOpção invalida.....\nDigite novamente....." + ANSI_RESET);
       }
     } while (opcao != 0);
@@ -51,6 +54,12 @@ public class projeto_PI {
 
   public static void respostainvalida() {
     System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+  }
+
+  public static void funcaoCreditos()  {
+    Scanner ler = new Scanner(System.in);
+        limpatela();
+        System.out.printf("☺ ☻ Este QUIZ é um oferecimento de  ☺\n\n ⇛ 𝕄 𝕀 𝔾 𝕌 𝔼 𝕃  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊  𝔹 𝔸 ℙ 𝕋 𝕀 𝕊 𝕋 𝔸 ⇚\n\n ⇛ 𝔸 𝕃 𝔸 ℕ  𝕊 𝕀 𝕃 𝕍 𝔸  𝔻 𝕆 𝕊  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊 ⇚\n\n ⇛ 𝔽 𝔼 𝕃 𝕀 ℙ 𝔼  𝕁 𝕌 𝕍 𝔼 ℕ 𝔸 𝕃  𝔻 𝔸  𝕊 𝕀 𝕃 𝕍 𝔸 ⇚\n\n1 - Voltar ao menu\n0 - Sair\n\nDigite sua opção: ");
   }
 
   public static void caseEngenhariadeSoftware() {
@@ -814,7 +823,6 @@ public class projeto_PI {
   public static void funcaoTemas() {
     Scanner ler = new Scanner(System.in);
     int temas;
-    int opcao = 0;
     limpatela();
     System.out.printf(ANSI_YELLOW +
         "\n\nSelecione o tema desejado\n\n ==============   1-ENGENHARIA DE SOFTWARE   ===============\n\n   2-ESPORTES     |       3-HISTÓRIA         |       4-CONHECIMENTOS GERAIS \n\n0-VOLTAR\n\nDigite sua opção: "
@@ -825,26 +833,22 @@ public class projeto_PI {
 
       case 1:
         caseEngenhariadeSoftware();
-        System.out.printf("Fim do quiz.\n\n 1 - Voltar ao menu\n\nDigite sua opção: ");
-        opcao = ler.nextInt();
+        System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
 
       case 2:
         caseEsportes();
-        System.out.printf("Fim do quiz.\n\n 1 - Voltar ao menu\n\nDigite sua opção: ");
-        opcao = ler.nextInt();
+        System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
 
       case 3:
         caseHistoria();
-        System.out.printf("Fim do quiz.\n\n 1 - Voltar ao menu\n\nDigite sua opção: ");
-        opcao = ler.nextInt();
+        System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
 
       case 4:
         caseConhecimentosGerais();
-        System.out.printf("Fim do quiz.\n\n 1 - Voltar ao menu\n\nDigite sua opção: ");
-        opcao = ler.nextInt();
+        System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
     }
 
