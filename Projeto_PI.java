@@ -2,6 +2,7 @@ package Projeto_pi;
 
 import java.util.Scanner;
 import java.io.*;
+import java.util.Random;
 
 public class projeto_PI {
 
@@ -16,15 +17,13 @@ public class projeto_PI {
           + ANSI_BLUE);
       opcao = ler.nextInt();
 
-      if (opcao == 1)  {
+      if (opcao == 1) {
         funcaoTemas();
         opcao = ler.nextInt();
-      } 
-      else if (opcao == 2)  {
+      } else if (opcao == 2) {
         funcaoCreditos();
         opcao = ler.nextInt();
-      } 
-      else if (opcao > 2) {
+      } else if (opcao > 2) {
         System.out.printf(ANSI_RED + "\n\nOpção invalida.....\nDigite novamente....." + ANSI_RESET);
       }
     } while (opcao != 0);
@@ -56,9 +55,10 @@ public class projeto_PI {
     System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
   }
 
-  public static void funcaoCreditos()  {
+  public static void funcaoCreditos() {
     Scanner ler = new Scanner(System.in);
-        System.out.printf("\n\n☺ ☻ Este QUIZ é um oferecimento de  ☺\n\n ⇛ 𝕄 𝕀 𝔾 𝕌 𝔼 𝕃  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊  𝔹 𝔸 ℙ 𝕋 𝕀 𝕊 𝕋 𝔸 ⇚\n\n ⇛ 𝔸 𝕃 𝔸 ℕ  𝕊 𝕀 𝕃 𝕍 𝔸  𝔻 𝕆 𝕊  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊 ⇚\n\n ⇛ 𝔽 𝔼 𝕃 𝕀 ℙ 𝔼  𝕁 𝕌 𝕍 𝔼 ℕ 𝔸 𝕃  𝔻 𝔸  𝕊 𝕀 𝕃 𝕍 𝔸 ⇚\n\n");
+    System.out.printf(
+        "\n\n☺ ☻ Este QUIZ é um oferecimento de  ☺\n\n ⇛ 𝕄 𝕀 𝔾 𝕌 𝔼 𝕃  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊  𝔹 𝔸 ℙ 𝕋 𝕀 𝕊 𝕋 𝔸 ⇚\n\n ⇛ 𝔸 𝕃 𝔸 ℕ  𝕊 𝕀 𝕃 𝕍 𝔸  𝔻 𝕆 𝕊  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊 ⇚\n\n ⇛ 𝔽 𝔼 𝕃 𝕀 ℙ 𝔼  𝕁 𝕌 𝕍 𝔼 ℕ 𝔸 𝕃  𝔻 𝔸  𝕊 𝕀 𝕃 𝕍 𝔸 ⇚\n\n\n1 - Voltar ao Menu\n0 - Sair\n\nDigite sua opção: ");
   }
 
   public static void caseEngenhariadeSoftware() {
@@ -380,7 +380,7 @@ public class projeto_PI {
       } else {
         respostaerrada();
       }
-    } while (resposta < 'a' || resposta >'d');
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
       System.out.printf(ANSI_BLACK +
@@ -390,7 +390,7 @@ public class projeto_PI {
       if (resposta == 'b') {
         acertos++;
         respostacerta();
-      } else if (resposta < 'a' || resposta >'d') {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         respostainvalida();
       } else {
@@ -440,172 +440,172 @@ public class projeto_PI {
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 1°\nNa Grécia Antiga, as principais cidades-estado foram\n1 - Babilônia e Atenas\n2 - Esparta e Roma\n3 - Babilônia e Esparta\n4 - Atenas e Esparta RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQuestão 1°\nNa Grécia Antiga, as principais cidades-estado foram\na) - Babilônia e Atenas\nb) - Esparta e Roma\nc) - Babilônia e Esparta\nd) - Atenas e Esparta RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 2°\nA Segunda Grande Guerra (1939-1945) adquiriu caráter mundial a partir de 7 de dezembro de 1941, quando:\n1 - os russos tomaram a iniciativa de anexar os Estados Bálticos.\n2 - os alemães invadiram a França.\n3 - os japoneses atacaram a base norte-americana de Pearl Harbor. RESPOSTA CERTA\n4 - os chineses cederam a maior parte de seu território às tropas do Eixo.\n\nDigite a resposta certa: "
+          "\n\nQuestão 2°\nA Segunda Grande Guerra (1939-1945) adquiriu caráter mundial a partir de 7 de dezembro de 1941, quando:\na) - os russos tomaram a iniciativa de anexar os Estados Bálticos.\nb) - os alemães invadiram a França.\nc) - os japoneses atacaram a base norte-americana de Pearl Harbor. RESPOSTA CERTA\nd) - os chineses cederam a maior parte de seu território às tropas do Eixo.\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 3) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 3°\nA II Guerra Mundial foi caracterizada pelo desenvolvimento da indústria bélica. Sobre este assunto é correto afirmar que:\n1 - A maior invenção deste conflito foi a bomba atômica lançada em cidades japonesas em agosto de 1945. RESPOSTA CERTA\n2 - Os nazistas conseguiram criar armas como o submarino nuclear e o gás Ziklon-B.\n3 - As mesmas estratégias utilizadas na Primeira Guerra foram repetidas na Segunda, como o uso da cavalaria.4 - A aviação de guerra se restringiu à missões de patrulhamento e reconhecimento.\n\nDigite a resposta certa: "
+          "\n\nQuestão 3°\nA II Guerra Mundial foi caracterizada pelo desenvolvimento da indústria bélica. Sobre este assunto é correto afirmar que:\na) - A maior invenção deste conflito foi a bomba atômica lançada em cidades japonesas em agosto de 1945. RESPOSTA CERTA\nb) - Os nazistas conseguiram criar armas como o submarino nuclear e o gás Ziklon-B.\nc) - As mesmas estratégias utilizadas na Primeira Guerra foram repetidas na Segunda, como o uso da cavalaria.d) - A aviação de guerra se restringiu à missões de patrulhamento e reconhecimento.\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 1) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 4°\nAlguns povos que fizeram parte da civilização Mesopotâmica são:\n1 - sumérios e acádios RESPOSTA CERTA\n2 - gregos e romanos\n3 - gregos e egípcios\n4 - sumérios e romanos\n\nDigite a resposta certa: "
+          "\n\nQuestão 4°\nAlguns povos que fizeram parte da civilização Mesopotâmica são:\na) - sumérios e acádios RESPOSTA CERTA\nb) - gregos e romanos\nc) - gregos e egípcios\nd) - sumérios e romanos\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 1) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 5°\nO Rio Nilo foi importante para os egípcios, pois:\n1 - Suas cheias tornavam a terra fértil.\n2 - Era utilizado pelos egípcios para pesca.\n3 - Garantia a unidade política do Egito, pois era uma via utilizada para interligar os territórios.\n4 - Todas as alternativas anteriores. RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQuestão 5°\nO Rio Nilo foi importante para os egípcios, pois:\na) - Suas cheias tornavam a terra fértil.\nb) - Era utilizado pelos egípcios para pesca.\nc) - Garantia a unidade política do Egito, pois era uma via utilizada para interligar os territórios.\nd) - Todas as alternativas anteriores. RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 6°\nCom a crise da República e o início do período imperial, quem assumiu o poder em Roma em 27 a.c. foi:\n1 - Júlio César\n2 - Marco Antônio\n3 – Brutus\n4 - Otávio Augusto RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQuestão 6°\nCom a crise da República e o início do período imperial, quem assumiu o poder em Roma em 27 a.c. foi:\na) - Júlio César\nb) - Marco Antônio\nc) – Brutus\nd) - Otávio Augusto RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 7°\nA Guerra do Peloponeso, ocorrida na Grécia entre 431 e 401 a.C., foi:\n1 - uma guerra defensiva empreendida pelos gregos contra a invasão dos persas e a ameaça de perda de suas principais praças de comércio do Mar Mediterrâneo;\n2 - uma luta comandada pelas cidades de Esparta e Corinto contra a hegemonia da Confederação de Delos - liderada por Atenas - sobre o território grego;RESPOSTA CERTA\n3 - uma guerra entre gregos e romanos, pelo desejo de implantação de uma cultura hegemônica sobre os povos do Oriente Próximo;\n4 - uma invasão do território grego pelas tropas de Alexandre - O Grande, na época de expansão do Império Macedônico que herdara de seu pai.\n\nDigite a resposta certa: "
+          "\n\nQuestão 7°\nA Guerra do Peloponeso, ocorrida na Grécia entre 431 e 401 a.C., foi:\na) - uma guerra defensiva empreendida pelos gregos contra a invasão dos persas e a ameaça de perda de suas principais praças de comércio do Mar Mediterrâneo;\nb) - uma luta comandada pelas cidades de Esparta e Corinto contra a hegemonia da Confederação de Delos - liderada por Atenas - sobre o território grego;RESPOSTA CERTA\nc) - uma guerra entre gregos e romanos, pelo desejo de implantação de uma cultura hegemônica sobre os povos do Oriente Próximo;\nd) - uma invasão do território grego pelas tropas de Alexandre - O Grande, na época de expansão do Império Macedônico que herdara de seu pai.\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 2) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 8°\nO papiro — suporte usado pelos egípcios na sua escrita — era produzido com:\n1 - uma planta RESPOSTA CERTA\n2 - pele de animais\n3 – algodão\n4 – barro\n\nDigite a resposta certa: "
+          "\n\nQuestão 8°\nO papiro — suporte usado pelos egípcios na sua escrita — era produzido com:\na) - uma planta RESPOSTA CERTA\nb) - pele de animais\nc) – algodão\nd) – barro\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 1) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 9°\nQuando, a partir do final do último século a.C., Roma conquistou o Egito, e áreas da Mesopotâmia, encontrou nesses territórios uma forte presença de elementos gregos. Isto foi devido:\n\n1 - ao recrutamento de soldados gregos pelos monarcas persas e egípcios;\n2 - à colonização grega, semelhante à realizada na Sicília e Magna Grécia;\n3 - à expansão comercial egípcia no Mediterrâneo Oriental;\n4 - ao helenismo, resultante das conquistas de Alexandre, o Grande. RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQuestão 9°\nQuando, a partir do final do último século a.C., Roma conquistou o Egito, e áreas da Mesopotâmia, encontrou nesses territórios uma forte presença de elementos gregos. Isto foi devido:\n\na) - ao recrutamento de soldados gregos pelos monarcas persas e egípcios;\nb) - à colonização grega, semelhante à realizada na Sicília e Magna Grécia;\nc) - à expansão comercial egípcia no Mediterrâneo Oriental;\nd) - ao helenismo, resultante das conquistas de Alexandre, o Grande. RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 10°\n\nMaior conflito da história da América do Sul foi:1 - Guerra do Pacífico\n2 - Guerra do Chaco\n3 - Guerra da Cisplatina\n4 - Guerra do Paraguai RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQuestão 10°\n\nMaior conflito da história da América do Sul foi:\na) - Guerra do Pacífico\nb) - Guerra do Chaco\nc) - Guerra da Cisplatina\nd) - Guerra do Paraguai RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     if (acertos == 10) {
       System.out.printf(ANSI_GREEN + "\n\nUau voce sabe tudo sobre História. Voce acertou todas!!!!" + ANSI_RESET);
@@ -633,172 +633,172 @@ public class projeto_PI {
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 1°\nQual a causa do terremoto que atingiu a Turquia e na Síria no dia 6 de fevereiro de 2023 e qual a sua magnitude?\n\n1 - movimentos de placas tectônicas e magnitute 7,8 RESPOSTA CERTA\n2 - tempestades fortes combinadas com terremotos submarinos e magnitude 8,7\n3 - erupções vulcânicas e magnitude 7,8\n4 - combinação de fatores climáticos e magnitude 7,8\n\nDigite a resposta certa: "
+          "\n\nQuestão 1°\nQual a causa do terremoto que atingiu a Turquia e na Síria no dia 6 de fevereiro de 2023 e qual a sua magnitude?\n\na) - movimentos de placas tectônicas e magnitute 7,8 RESPOSTA CERTA\nb) - tempestades fortes combinadas com terremotos submarinos e magnitude 8,7\nc) - erupções vulcânicas e magnitude 7,8\nd) - combinação de fatores climáticos e magnitude 7,8\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 1) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQuestão 2°\nO que é Crimeia?\n\n1 - tipo de conferência realizada entre líderes de organizações russas\n2 - nome dado ao conflito entre a Rússia e a Ucrânia\n3 - península localizada no sul da Ucrânia que em 2014 foi anexada ao território da Rússia RESPOSTA CERTA\n4 - conjunto das repúblicas da União Soviética\n\nDigite a resposta certa: "
+          "\n\nQuestão 2°\nO que é Crimeia?\n\na) - tipo de conferência realizada entre líderes de organizações russas\nb) - nome dado ao conflito entre a Rússia e a Ucrânia\nc) - península localizada no sul da Ucrânia que em 2014 foi anexada ao território da Rússia RESPOSTA CERTA\nd) - conjunto das repúblicas da União Soviética\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 3) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 3°\nQual o lugar mais profundo dos oceanos?\n\n1 - Fossa de Bentley\n2 - Fossa de Tonga\n3 - Fossa de Java\n4 - Fossa das Marianas RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 3°\nQual o lugar mais profundo dos oceanos?\n\na) - Fossa de Bentley\nb) - Fossa de Tonga\nc) - Fossa de Java\nd) - Fossa das Marianas RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 4°\nQual a maior operação militar da história, que contou com o deslocamento de 3,8 milhões de soldados?\n\n1 - Operação Tempestade no Deserto (Exército dos Estados Unidos na Guerra do Golfo)\n2 - Operação Overlord (Aliados na Segunda Guerra Mundial)\n3 - Operação Barbarossa (Países do Eixo na Segunda Guerra Mundial) RESPOSTA CERTA\n4 - Operação Downfall (Aliados na Segunda Guerra Mundial)\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 4°\nQual a maior operação militar da história, que contou com o deslocamento de 3,8 milhões de soldados?\n\na) - Operação Tempestade no Deserto (Exército dos Estados Unidos na Guerra do Golfo)\nb) - Operação Overlord (Aliados na Segunda Guerra Mundial)\nc) - Operação Barbarossa (Países do Eixo na Segunda Guerra Mundial) RESPOSTA CERTA\nd) - Operação Downfall (Aliados na Segunda Guerra Mundial)\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 3) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 5°\nQual o maior planeta do sistema solar?\n\n1 – Marte\n2 – Saturno\n3 – Terra\n4 - Júpiter RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 5°\nQual o maior planeta do sistema solar?\n\na) – Marte\nb) – Saturno\nc) – Terra\nd) - Júpiter RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 6°\nQual o monumento famoso pela sua inclinação?\n\n1 - Torre Eiffel\n2 – Esfinge\n3 - Estátua da Liberdade\n4 - Torre de Pisa RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 6°\nQual o monumento famoso pela sua inclinação?\n\na) - Torre Eiffel\nb) – Esfinge\nc) - Estátua da Liberdade\nd) - Torre de Pisa RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 7°\nQual o nome popular do cloreto de sódio?\n\n1 – Vinagre\n2 - Sal de cozinha RESPOSTA CERTA\n3 – Papel\n4 – Fermento\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 7°\nQual o nome popular do cloreto de sódio?\n\na) – Vinagre\nb) - Sal de cozinha RESPOSTA CERTA\nc) – Papel\nd) – Fermento\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 2) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 8°\nQue fruto nasce da oliveira?\n\n1 – Amêndoa\n2 – Abacate\n3 -  Azeitona RESPOSTA CERTA\n4 – Açaí\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 8°\nQue fruto nasce da oliveira?\n\na) – Amêndoa\nb) – Abacate\nc) -  Azeitona RESPOSTA CERTA\nd) – Açaí\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 3) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 9°\nQual destas substâncias faz parte da composição do vidro?\n\n1 – Petróleo\n2 – Fibra\n3 – Celulose\n4 – Areia RESPOSTA CERTA\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 9°\nQual destas substâncias faz parte da composição do vidro?\n\na) – Petróleo\nb) – Fibra\nc) – Celulose\nd) – Areia RESPOSTA CERTA\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 4) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     do {
 
       System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 10°\nQual a montanha mais alta do Brasil?\n\n1 - Pico da Neblina RESPOSTA CERTA\n2 - Pico Paraná\n3 - Monte Roraima\n4 - Pico Maior de Friburgo\n\nDigite a resposta certa: "
+          "\n\nQUESTÃO 10°\nQual a montanha mais alta do Brasil?\n\na) - Pico da Neblina RESPOSTA CERTA\nb) - Pico Paraná\nc) - Monte Roraima\nd) - Pico Maior de Friburgo\n\nDigite a resposta certa: "
           + ANSI_RESET);
-      resposta = ler.nextInt();
-      if (resposta == 1) {
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
         acertos++;
         respostacerta();
-      } else if (resposta > 4 || resposta == 0) {
+      } else if (resposta < 'a' || resposta > 'd') {
         limpatela();
         System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
       } else {
         respostaerrada();
       }
-    } while (resposta > 4 || resposta == 0);
+    } while (resposta < 'a' || resposta > 'd');
 
     if (acertos == 10) {
       System.out.printf(ANSI_GREEN + "\n\nUau voce sabe tudo. Voce acertou todas!!!!" + ANSI_RESET);
@@ -821,36 +821,76 @@ public class projeto_PI {
 
   public static void funcaoTemas() {
     Scanner ler = new Scanner(System.in);
+    Random aleatorio = new Random();
     int temas;
     limpatela();
     System.out.printf(ANSI_YELLOW +
-        "\n\nSelecione o tema desejado\n\n ==============   1-ENGENHARIA DE SOFTWARE   ===============\n\n   2-ESPORTES     |       3-HISTÓRIA         |       4-CONHECIMENTOS GERAIS \n\n0-VOLTAR\n\nDigite sua opção: "
+        "\n\nSelecione o tema desejado\n\n ============== 1-ALEATORIO   |   2-ENGENHARIA DE SOFTWARE   ===============\n\n   3-ESPORTES     |       4-HISTÓRIA         |       5-CONHECIMENTOS GERAIS \n\n0-VOLTAR\n\nDigite sua opção: "
         + ANSI_RESET);
     temas = ler.nextInt();
+    if (temas == 1) {
+      temasAleatorio();
+    } else if (temas == 0) {
+      limpatela();
+      System.out.printf("1 - Voltar ao Menu\n0 - Sair\n\nDigite sua opção: ");
+
+    }
+
+    else {
+      switch (temas) {
+
+        case 2:
+          caseEngenhariadeSoftware();
+          funcaoCreditos();
+          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
+          break;
+
+        case 3:
+          caseEsportes();
+          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
+          break;
+
+        case 4:
+          caseHistoria();
+          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
+          break;
+
+        case 5:
+          caseConhecimentosGerais();
+          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
+          break;
+      }
+    }
+
+  }
+
+  public static void temasAleatorio() {
+    Random aleatorio = new Random();
+
+    int temas = aleatorio.nextInt(2, 6);
 
     switch (temas) {
 
-      case 1:
+      case 2:
         caseEngenhariadeSoftware();
         funcaoCreditos();
         System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
 
-      case 2:
+      case 3:
         caseEsportes();
         System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
 
-      case 3:
+      case 4:
         caseHistoria();
         System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
 
-      case 4:
+      case 5:
         caseConhecimentosGerais();
         System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
         break;
     }
-
   }
 }
