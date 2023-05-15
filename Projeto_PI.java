@@ -61,192 +61,776 @@ public class projeto_PI {
         "\n\n☺ ☻ Este QUIZ é um oferecimento de  ☺\n\n ⇛ 𝕄 𝕀 𝔾 𝕌 𝔼 𝕃  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊  𝔹 𝔸 ℙ 𝕋 𝕀 𝕊 𝕋 𝔸 ⇚\n\n ⇛ 𝔸 𝕃 𝔸 ℕ  𝕊 𝕀 𝕃 𝕍 𝔸  𝔻 𝕆 𝕊  𝕊 𝔸 ℕ 𝕋 𝕆 𝕊 ⇚\n\n ⇛ 𝔽 𝔼 𝕃 𝕀 ℙ 𝔼  𝕁 𝕌 𝕍 𝔼 ℕ 𝔸 𝕃  𝔻 𝔸  𝕊 𝕀 𝕃 𝕍 𝔸 ⇚\n\n\n1 - Voltar ao Menu\n0 - Sair\n\nDigite sua opção: ");
   }
 
+// CONFIGURAÇÕES DO TEMA ENGENHARIA DE SOFTWARE
   public static void caseEngenhariadeSoftware() {
-    Scanner ler = new Scanner(System.in);
-    int resposta = 0;
-    int acertos = 0;
-    limpatela();
-    System.out.printf("\n\nVoce selecionou ENGENHARIA DE SOFTWARE\n\n");
-    do {
-
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 1° - Métricas de produto são métricas de previsão empregadas para medir atributos internos de um sistema de software. O tamanho de sistema, medido em linhas de código, ou o número de métodos associados a cada classe de objeto são exemplos de métricas de produto. Em relação às métricas estáticas de produto de software, assinale a afirmativa INCORRETA\n\na) - Índice Fog: é a medida do comprimento médio de palavras e sentenças em documentos. Quanto maior o valor do índice Fog de um documento, mais fácil é a sua compreensão. RESPOSTA CERTA\nb) - Complexidade ciclomática: é a medida da complexidade de controle de um programa. Essa complexidade de controle pode estar relacionada à compreensibilidade do programa.\nc) - Comprimento de código: é a medida do tamanho de um programa. Geralmente, quanto maior o tamanho do código de um componente, mais complexo e sujeito a erros o componente está.\nd) - Profundidade de aninhamento condicional: é a medida da profundidade de aninhamento de declarações if em um programa. Declarações if profundamente aninhadas são difíceis de entender e potencialmente sujeitas a erros.\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'a') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 2° - A Linguagem de Modelagem Unificada (Unified Modeling Language – UML) é uma linguagem utilizada para modelar soluções de software, estruturas de aplicação, comportamento de sistemas e processos de negócio. Pertencem à linguagem UML, os seguintes diagramas, EXCETO:\n\na) - De estados.\nb) - De atividades.\nc) - De caso de uso.\nd) - Entidade relacionamento. RESPOSTA CERTA\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'd') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 3° - Trata-se de uma técnica utilizada para se projetarem casos de testes na qual o programa ou sistema é considerado uma caixa preta e, para testá-lo, são fornecidas entras e avaliadas as saídas para verificar se estão em conformidades com os objetivos especificados. Nesta técnica os detalhes de implementação não são considerados e o software é avaliado segundo o ponto de vista do usuário. A descrição anterior define:\n\na) -  Teste Unitário\nb) - Teste de Integridade\nc) - Teste de Mutação\nd) - Teste Funcional | RESPOSTA CERTA\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'd') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 4° - Assinale a alternativa que apresenta a notação gráfica para modelagem de software que define um conjunto de diagramas para documentar e ajudar no design de sistemas de software, particularmente sistemas orientados a objetos.\n\na) - UML. | RESPOSTA CERTA\nb) - XML.\nc) - HTML.\nd) - GML.\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'a') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 5° - O tipo de teste de software que serve para garantir que todas ou algumas partes de um sistema estão dialogando e funcionando corretamente em conjunto é o teste\n\na) - de regressão.\nb) - de aceitação.\nc) - de integração. | RESPOSTA CERTA\nd) - de validação.\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'c') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println("Resposta invalida digite novamente.");
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 6° - O diagrama da UML que é empregado para fazer modelagem de aspectos dinâmicos do sistema, que é essencialmente um gráfico de fluxo mostrando a concorrência entre esses fluxos, bem como as ramificações de controle, é chamado de\n\na) - diagrama de sequência.\nb) - diagrama de atividades. | RESPOSTA CERTA\nc) - diagrama de comunicação.\nd) - diagrama de máquina de estado.\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'b') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println("Resposta invalida digite novamente.");
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 7° - No contexto do projeto orientado a objetos, é necessário que as classes de projeto colaborem umas com as outras. No entanto, essa colaboração deve ser mantida em um nível mínimo aceitável, pois, se todas as classes de projeto colaboram com todas as outras classes de projeto, o sistema é difícil de implementar, testar e manter com o decorrer do tempo. Assim, num projeto orientado a objetos, essa característica descrita, e que é muito desejável, é denominada\n\na) - alto acoplamento.\nb) - alta coesão.\nc) - baixo acoplamento. | RESPOSTA CERTA\nd) - baixa coesão.\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'c') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 8° - Sobre gerenciamento de software, é importante compreender que ainda existem muitos softwares legados que são críticos para o negócio. As organizações precisam decidir como obter o melhor retorno de seus investimentos, o que envolve fazer uma avaliação realista do legado e decidir sobre a estratégia mais adequada para a continuidade e evolução dos serviços organizacionais. Assinale a alternativa que NÃO apresenta uma opção estratégica:\n\na) - Descartar completamente o produto, caso o sistema não contribua mais de forma efetiva para os processos de negócio.\nb) - Deixar o produto inalterado e continuar com a manutenção regular.\nc) - Reestruturar o produto para melhorar sua manutenibilidade.\nd) - Manter o produto e interromper manutenções regulares. | RESPOSTA CERTA\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'd') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 9° - O sistema TCEConsultas foi desenvolvido mediante uso do Processo Unificado (PU). Sendo assim, o modelo de projeto do TCEConsultas, responsável por descrever as realizações dos casos de uso em um nível mais físico, foi produzido majoritariamente durante as seguintes fases do PU:\n\na) - Concepção e Elaboração.\nb) - Elaboração e Construção; RESPOSTA CERTA\nc) - Construção e Transição.\nd) - Transição e Concepção.\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'b') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +
-          "\n\nQUESTÃO 10° - A norma ISO 9126 traz um conjunto de atributos de qualidade organizados em características e subcaraterísticas. A característica “Funcionalidade” diz respeito à capacidade do software de prover funcionalidades que satisfaçam as necessidades explícitas e implícitas dos usuários. Dentre as subcaracterísticas da característica ‘Funcionalidade’, aquela que corresponde à capacidade do software de interagir com um ou mais sistemas especificados é a:\n\na) - confiabilidade.\nb) - interoperabilidade. RESPOSTA CERTA\nc) - maturidade.\nd) - acessibilidade.\n\nDigite a resposta certa: "
-          + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'b') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    if (acertos == 10) {
-      System.out.printf(
-          ANSI_GREEN + "\n\nUau voce é um legitimo Engenheiro de Software. Voce acertou todas!!!!" + ANSI_RESET);
+    Random embaralhamento = new Random();
+    int configuracoes = embaralhamento.nextInt(1,5);
+    
+    if (configuracoes == 1) {
+        configEngenharia1();
+   }
+   
+    else if (configuracoes == 2) {
+        configEngenharia2();
     }
-    if (acertos > 5 && acertos < 10) {
-      System.out.printf(ANSI_BLUE + "\n\nMuito bem, voce é quase um engenheiro de software. Voce acertou " + acertos
-          + " de 10" + ANSI_RESET);
+    
+    else if (configuracoes == 3) {
+    	configEngenharia3();
     }
-    if (acertos == 5) {
-      System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
-          + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+    
+    else if (configuracoes == 4) {
+    	configEngenharia4();
     }
-    if (acertos < 5) {
-      System.out.printf(
-          ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
-              + "\nQue pena, voce tem que estudar mais, esta passando vergonha!" + ANSI_RESET);
-    }
+    	
   }
 
+  public static void configEngenharia1() {
+	  Scanner ler = new Scanner(System.in);
+	    int resposta = 0;
+	    int acertos = 0;
+	  limpatela();
+	    System.out.printf("\n\nENGENHARIA DE SOFTWARE\n\n");
+	    do {
+
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 1° - Métricas de produto são métricas de previsão empregadas para medir atributos internos de um sistema de software. O tamanho de sistema, medido em linhas de código, ou o número de métodos associados a cada classe de objeto são exemplos de métricas de produto. Em relação às métricas estáticas de produto de software, assinale a afirmativa INCORRETA\n\na) - Índice Fog: é a medida do comprimento médio de palavras e sentenças em documentos. Quanto maior o valor do índice Fog de um documento, mais fácil é a sua compreensão. RESPOSTA CERTA\nb) - Complexidade ciclomática: é a medida da complexidade de controle de um programa. Essa complexidade de controle pode estar relacionada à compreensibilidade do programa.\nc) - Comprimento de código: é a medida do tamanho de um programa. Geralmente, quanto maior o tamanho do código de um componente, mais complexo e sujeito a erros o componente está.\nd) - Profundidade de aninhamento condicional: é a medida da profundidade de aninhamento de declarações if em um programa. Declarações if profundamente aninhadas são difíceis de entender e potencialmente sujeitas a erros.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'a') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 2° - A Linguagem de Modelagem Unificada (Unified Modeling Language – UML) é uma linguagem utilizada para modelar soluções de software, estruturas de aplicação, comportamento de sistemas e processos de negócio. Pertencem à linguagem UML, os seguintes diagramas, EXCETO:\n\na) - De estados.\nb) - De atividades.\nc) - De caso de uso.\nd) - Entidade relacionamento. RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 3° - Trata-se de uma técnica utilizada para se projetarem casos de testes na qual o programa ou sistema é considerado uma caixa preta e, para testá-lo, são fornecidas entras e avaliadas as saídas para verificar se estão em conformidades com os objetivos especificados. Nesta técnica os detalhes de implementação não são considerados e o software é avaliado segundo o ponto de vista do usuário. A descrição anterior define:\n\na) -  Teste Unitário\nb) - Teste de Integridade\nc) - Teste de Mutação\nd) - Teste Funcional | RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 4° - Assinale a alternativa que apresenta a notação gráfica para modelagem de software que define um conjunto de diagramas para documentar e ajudar no design de sistemas de software, particularmente sistemas orientados a objetos.\n\na) - UML. | RESPOSTA CERTA\nb) - XML.\nc) - HTML.\nd) - GML.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'a') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 5° - O tipo de teste de software que serve para garantir que todas ou algumas partes de um sistema estão dialogando e funcionando corretamente em conjunto é o teste\n\na) - de regressão.\nb) - de aceitação.\nc) - de integração. | RESPOSTA CERTA\nd) - de validação.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'c') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println("Resposta invalida digite novamente.");
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 6° - O diagrama da UML que é empregado para fazer modelagem de aspectos dinâmicos do sistema, que é essencialmente um gráfico de fluxo mostrando a concorrência entre esses fluxos, bem como as ramificações de controle, é chamado de\n\na) - diagrama de sequência.\nb) - diagrama de atividades. | RESPOSTA CERTA\nc) - diagrama de comunicação.\nd) - diagrama de máquina de estado.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println("Resposta invalida digite novamente.");
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 7° - No contexto do projeto orientado a objetos, é necessário que as classes de projeto colaborem umas com as outras. No entanto, essa colaboração deve ser mantida em um nível mínimo aceitável, pois, se todas as classes de projeto colaboram com todas as outras classes de projeto, o sistema é difícil de implementar, testar e manter com o decorrer do tempo. Assim, num projeto orientado a objetos, essa característica descrita, e que é muito desejável, é denominada\n\na) - alto acoplamento.\nb) - alta coesão.\nc) - baixo acoplamento. | RESPOSTA CERTA\nd) - baixa coesão.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'c') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 8° - Sobre gerenciamento de software, é importante compreender que ainda existem muitos softwares legados que são críticos para o negócio. As organizações precisam decidir como obter o melhor retorno de seus investimentos, o que envolve fazer uma avaliação realista do legado e decidir sobre a estratégia mais adequada para a continuidade e evolução dos serviços organizacionais. Assinale a alternativa que NÃO apresenta uma opção estratégica:\n\na) - Descartar completamente o produto, caso o sistema não contribua mais de forma efetiva para os processos de negócio.\nb) - Deixar o produto inalterado e continuar com a manutenção regular.\nc) - Reestruturar o produto para melhorar sua manutenibilidade.\nd) - Manter o produto e interromper manutenções regulares. | RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 9° - O sistema TCEConsultas foi desenvolvido mediante uso do Processo Unificado (PU). Sendo assim, o modelo de projeto do TCEConsultas, responsável por descrever as realizações dos casos de uso em um nível mais físico, foi produzido majoritariamente durante as seguintes fases do PU:\n\na) - Concepção e Elaboração.\nb) - Elaboração e Construção; RESPOSTA CERTA\nc) - Construção e Transição.\nd) - Transição e Concepção.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 10° - A norma ISO 9126 traz um conjunto de atributos de qualidade organizados em características e subcaraterísticas. A característica “Funcionalidade” diz respeito à capacidade do software de prover funcionalidades que satisfaçam as necessidades explícitas e implícitas dos usuários. Dentre as subcaracterísticas da característica ‘Funcionalidade’, aquela que corresponde à capacidade do software de interagir com um ou mais sistemas especificados é a:\n\na) - confiabilidade.\nb) - interoperabilidade. RESPOSTA CERTA\nc) - maturidade.\nd) - acessibilidade.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+	    if (acertos == 10) {
+	      System.out.printf(
+	          ANSI_GREEN + "\n\nUau voce é um legitimo Engenheiro de Software. Voce acertou todas!!!!" + ANSI_RESET);
+	    }
+	    if (acertos > 5 && acertos < 10) {
+	      System.out.printf(ANSI_BLUE + "\n\nMuito bem, voce é quase um engenheiro de software. Voce acertou " + acertos
+	          + " de 10" + ANSI_RESET);
+	    }
+	    if (acertos == 5) {
+	      System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
+	          + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+	    }
+	    if (acertos < 5) {
+	      System.out.printf(
+	          ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
+	              + "\nQue pena, voce tem que estudar mais, esta passando vergonha!" + ANSI_RESET);
+	    }
+  }
+  public static void configEngenharia2() {
+	  Scanner ler = new Scanner(System.in);
+	    int resposta = 0;
+	    int acertos = 0;
+	    limpatela();
+	    System.out.printf("\n\nENGENHARIA DE SOFTWARE\n\n");
+	    
+
+           do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 1° - A norma ISO 9126 traz um conjunto de atributos de qualidade organizados em características e subcaraterísticas. A característica “Funcionalidade” diz respeito à capacidade do software de prover funcionalidades que satisfaçam as necessidades explícitas e implícitas dos usuários. Dentre as subcaracterísticas da característica ‘Funcionalidade’, aquela que corresponde à capacidade do software de interagir com um ou mais sistemas especificados é a:\n\na) - confiabilidade.\nb) - interoperabilidade. RESPOSTA CERTA\nc) - maturidade.\nd) - acessibilidade.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+           do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 2° - Sobre gerenciamento de software, é importante compreender que ainda existem muitos softwares legados que são críticos para o negócio. As organizações precisam decidir como obter o melhor retorno de seus investimentos, o que envolve fazer uma avaliação realista do legado e decidir sobre a estratégia mais adequada para a continuidade e evolução dos serviços organizacionais. Assinale a alternativa que NÃO apresenta uma opção estratégica:\n\na) - Descartar completamente o produto, caso o sistema não contribua mais de forma efetiva para os processos de negócio.\nb) - Deixar o produto inalterado e continuar com a manutenção regular.\nc) - Reestruturar o produto para melhorar sua manutenibilidade.\nd) - Manter o produto e interromper manutenções regulares. | RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+            do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 3° - O diagrama da UML que é empregado para fazer modelagem de aspectos dinâmicos do sistema, que é essencialmente um gráfico de fluxo mostrando a concorrência entre esses fluxos, bem como as ramificações de controle, é chamado de\n\na) - diagrama de sequência.\nb) - diagrama de atividades. | RESPOSTA CERTA\nc) - diagrama de comunicação.\nd) - diagrama de máquina de estado.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println("Resposta invalida digite novamente.");
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+            do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 4° - O sistema TCEConsultas foi desenvolvido mediante uso do Processo Unificado (PU). Sendo assim, o modelo de projeto do TCEConsultas, responsável por descrever as realizações dos casos de uso em um nível mais físico, foi produzido majoritariamente durante as seguintes fases do PU:\n\na) - Concepção e Elaboração.\nb) - Elaboração e Construção; RESPOSTA CERTA\nc) - Construção e Transição.\nd) - Transição e Concepção.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 5° - Métricas de produto são métricas de previsão empregadas para medir atributos internos de um sistema de software. O tamanho de sistema, medido em linhas de código, ou o número de métodos associados a cada classe de objeto são exemplos de métricas de produto. Em relação às métricas estáticas de produto de software, assinale a afirmativa INCORRETA\n\na) - Índice Fog: é a medida do comprimento médio de palavras e sentenças em documentos. Quanto maior o valor do índice Fog de um documento, mais fácil é a sua compreensão. RESPOSTA CERTA\nb) - Complexidade ciclomática: é a medida da complexidade de controle de um programa. Essa complexidade de controle pode estar relacionada à compreensibilidade do programa.\nc) - Comprimento de código: é a medida do tamanho de um programa. Geralmente, quanto maior o tamanho do código de um componente, mais complexo e sujeito a erros o componente está.\nd) - Profundidade de aninhamento condicional: é a medida da profundidade de aninhamento de declarações if em um programa. Declarações if profundamente aninhadas são difíceis de entender e potencialmente sujeitas a erros.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'a') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+           do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 6° - Trata-se de uma técnica utilizada para se projetarem casos de testes na qual o programa ou sistema é considerado uma caixa preta e, para testá-lo, são fornecidas entras e avaliadas as saídas para verificar se estão em conformidades com os objetivos especificados. Nesta técnica os detalhes de implementação não são considerados e o software é avaliado segundo o ponto de vista do usuário. A descrição anterior define:\n\na) -  Teste Unitário\nb) - Teste de Integridade\nc) - Teste de Mutação\nd) - Teste Funcional | RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+           do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 7° - Assinale a alternativa que apresenta a notação gráfica para modelagem de software que define um conjunto de diagramas para documentar e ajudar no design de sistemas de software, particularmente sistemas orientados a objetos.\n\na) - UML. | RESPOSTA CERTA\nb) - XML.\nc) - HTML.\nd) - GML.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'a') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+           do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 8° - O tipo de teste de software que serve para garantir que todas ou algumas partes de um sistema estão dialogando e funcionando corretamente em conjunto é o teste\n\na) - de regressão.\nb) - de aceitação.\nc) - de integração. | RESPOSTA CERTA\nd) - de validação.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'c') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println("Resposta invalida digite novamente.");
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+           do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 9° - A Linguagem de Modelagem Unificada (Unified Modeling Language – UML) é uma linguagem utilizada para modelar soluções de software, estruturas de aplicação, comportamento de sistemas e processos de negócio. Pertencem à linguagem UML, os seguintes diagramas, EXCETO:\n\na) - De estados.\nb) - De atividades.\nc) - De caso de uso.\nd) - Entidade relacionamento. RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+           do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 10° - No contexto do projeto orientado a objetos, é necessário que as classes de projeto colaborem umas com as outras. No entanto, essa colaboração deve ser mantida em um nível mínimo aceitável, pois, se todas as classes de projeto colaboram com todas as outras classes de projeto, o sistema é difícil de implementar, testar e manter com o decorrer do tempo. Assim, num projeto orientado a objetos, essa característica descrita, e que é muito desejável, é denominada\n\na) - alto acoplamento.\nb) - alta coesão.\nc) - baixo acoplamento. | RESPOSTA CERTA\nd) - baixa coesão.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'c') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          if (acertos == 10) {
+	      System.out.printf(
+	          ANSI_GREEN + "\n\nUau voce é um legitimo Engenheiro de Software. Voce acertou todas!!!!" + ANSI_RESET);
+	    }
+	    if (acertos > 5 && acertos < 10) {
+	      System.out.printf(ANSI_BLUE + "\n\nMuito bem, voce é quase um engenheiro de software. Voce acertou " + acertos
+	          + " de 10" + ANSI_RESET);
+	    }
+	    if (acertos == 5) {
+	      System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
+	          + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+	    }
+	    if (acertos < 5) {
+	      System.out.printf(
+	          ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
+	              + "\nQue pena, voce tem que estudar mais, esta passando vergonha!" + ANSI_RESET);
+	    }
+  }
+  public static void configEngenharia3() {
+	  Scanner ler = new Scanner(System.in);
+	    int resposta = 0;
+	    int acertos = 0;
+	    limpatela();
+	    System.out.printf("\n\nENGENHARIA DE SOFTWARE\n\n");
+	              
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 1° - O diagrama da UML que é empregado para fazer modelagem de aspectos dinâmicos do sistema, que é essencialmente um gráfico de fluxo mostrando a concorrência entre esses fluxos, bem como as ramificações de controle, é chamado de\n\na) - diagrama de sequência.\nb) - diagrama de atividades. | RESPOSTA CERTA\nc) - diagrama de comunicação.\nd) - diagrama de máquina de estado.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println("Resposta invalida digite novamente.");
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+         do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 2° - Métricas de produto são métricas de previsão empregadas para medir atributos internos de um sistema de software. O tamanho de sistema, medido em linhas de código, ou o número de métodos associados a cada classe de objeto são exemplos de métricas de produto. Em relação às métricas estáticas de produto de software, assinale a afirmativa INCORRETA\n\na) - Índice Fog: é a medida do comprimento médio de palavras e sentenças em documentos. Quanto maior o valor do índice Fog de um documento, mais fácil é a sua compreensão. RESPOSTA CERTA\nb) - Complexidade ciclomática: é a medida da complexidade de controle de um programa. Essa complexidade de controle pode estar relacionada à compreensibilidade do programa.\nc) - Comprimento de código: é a medida do tamanho de um programa. Geralmente, quanto maior o tamanho do código de um componente, mais complexo e sujeito a erros o componente está.\nd) - Profundidade de aninhamento condicional: é a medida da profundidade de aninhamento de declarações if em um programa. Declarações if profundamente aninhadas são difíceis de entender e potencialmente sujeitas a erros.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'a') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+         do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 3° - A norma ISO 9126 traz um conjunto de atributos de qualidade organizados em características e subcaraterísticas. A característica “Funcionalidade” diz respeito à capacidade do software de prover funcionalidades que satisfaçam as necessidades explícitas e implícitas dos usuários. Dentre as subcaracterísticas da característica ‘Funcionalidade’, aquela que corresponde à capacidade do software de interagir com um ou mais sistemas especificados é a:\n\na) - confiabilidade.\nb) - interoperabilidade. RESPOSTA CERTA\nc) - maturidade.\nd) - acessibilidade.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+         do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 4° - No contexto do projeto orientado a objetos, é necessário que as classes de projeto colaborem umas com as outras. No entanto, essa colaboração deve ser mantida em um nível mínimo aceitável, pois, se todas as classes de projeto colaboram com todas as outras classes de projeto, o sistema é difícil de implementar, testar e manter com o decorrer do tempo. Assim, num projeto orientado a objetos, essa característica descrita, e que é muito desejável, é denominada\n\na) - alto acoplamento.\nb) - alta coesão.\nc) - baixo acoplamento. | RESPOSTA CERTA\nd) - baixa coesão.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'c') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 5° - Assinale a alternativa que apresenta a notação gráfica para modelagem de software que define um conjunto de diagramas para documentar e ajudar no design de sistemas de software, particularmente sistemas orientados a objetos.\n\na) - UML. | RESPOSTA CERTA\nb) - XML.\nc) - HTML.\nd) - GML.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'a') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 6° - Sobre gerenciamento de software, é importante compreender que ainda existem muitos softwares legados que são críticos para o negócio. As organizações precisam decidir como obter o melhor retorno de seus investimentos, o que envolve fazer uma avaliação realista do legado e decidir sobre a estratégia mais adequada para a continuidade e evolução dos serviços organizacionais. Assinale a alternativa que NÃO apresenta uma opção estratégica:\n\na) - Descartar completamente o produto, caso o sistema não contribua mais de forma efetiva para os processos de negócio.\nb) - Deixar o produto inalterado e continuar com a manutenção regular.\nc) - Reestruturar o produto para melhorar sua manutenibilidade.\nd) - Manter o produto e interromper manutenções regulares. | RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 7° - A Linguagem de Modelagem Unificada (Unified Modeling Language – UML) é uma linguagem utilizada para modelar soluções de software, estruturas de aplicação, comportamento de sistemas e processos de negócio. Pertencem à linguagem UML, os seguintes diagramas, EXCETO:\n\na) - De estados.\nb) - De atividades.\nc) - De caso de uso.\nd) - Entidade relacionamento. RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 8° - Trata-se de uma técnica utilizada para se projetarem casos de testes na qual o programa ou sistema é considerado uma caixa preta e, para testá-lo, são fornecidas entras e avaliadas as saídas para verificar se estão em conformidades com os objetivos especificados. Nesta técnica os detalhes de implementação não são considerados e o software é avaliado segundo o ponto de vista do usuário. A descrição anterior define:\n\na) -  Teste Unitário\nb) - Teste de Integridade\nc) - Teste de Mutação\nd) - Teste Funcional | RESPOSTA CERTA\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'd') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 9° - O sistema TCEConsultas foi desenvolvido mediante uso do Processo Unificado (PU). Sendo assim, o modelo de projeto do TCEConsultas, responsável por descrever as realizações dos casos de uso em um nível mais físico, foi produzido majoritariamente durante as seguintes fases do PU:\n\na) - Concepção e Elaboração.\nb) - Elaboração e Construção; RESPOSTA CERTA\nc) - Construção e Transição.\nd) - Transição e Concepção.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'b') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          do {
+	      System.out.printf(ANSI_BLACK +
+	          "\n\nQUESTÃO 10° - O tipo de teste de software que serve para garantir que todas ou algumas partes de um sistema estão dialogando e funcionando corretamente em conjunto é o teste\n\na) - de regressão.\nb) - de aceitação.\nc) - de integração. | RESPOSTA CERTA\nd) - de validação.\n\nDigite a resposta certa: "
+	          + ANSI_RESET);
+	      resposta = ler.next().toLowerCase().charAt(0);
+	      if (resposta == 'c') {
+	        acertos++;
+	        respostacerta();
+	      } else if (resposta < 'a' || resposta > 'd') {
+	        limpatela();
+	        System.out.println("Resposta invalida digite novamente.");
+	      } else {
+	        respostaerrada();
+	      }
+	    } while (resposta < 'a' || resposta > 'd');
+
+          if (acertos == 10) {
+	      System.out.printf(
+	          ANSI_GREEN + "\n\nUau voce é um legitimo Engenheiro de Software. Voce acertou todas!!!!" + ANSI_RESET);
+	    }
+	    if (acertos > 5 && acertos < 10) {
+	      System.out.printf(ANSI_BLUE + "\n\nMuito bem, voce é quase um engenheiro de software. Voce acertou " + acertos
+	          + " de 10" + ANSI_RESET);
+	    }
+	    if (acertos == 5) {
+	      System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
+	          + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+	    }
+	    if (acertos < 5) {
+	      System.out.printf(
+	          ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
+	              + "\nQue pena, voce tem que estudar mais, esta passando vergonha!" + ANSI_RESET);
+	    }
+  }
+  public static void configEngenharia4() {
+      Scanner ler = new Scanner(System.in);
+   int resposta = 0;
+   int acertos = 0;
+   limpatela();
+   System.out.printf("\n\nENGENHARIA DE SOFTWARE\n\n");
+             
+       
+
+      do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 1° - Trata-se de uma técnica utilizada para se projetarem casos de testes na qual o programa ou sistema é considerado uma caixa preta e, para testá-lo, são fornecidas entras e avaliadas as saídas para verificar se estão em conformidades com os objetivos especificados. Nesta técnica os detalhes de implementação não são considerados e o software é avaliado segundo o ponto de vista do usuário. A descrição anterior define:\n\na) -  Teste Unitário\nb) - Teste de Integridade\nc) - Teste de Mutação\nd) - Teste Funcional | RESPOSTA CERTA\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'd') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+      do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 2° - O sistema TCEConsultas foi desenvolvido mediante uso do Processo Unificado (PU). Sendo assim, o modelo de projeto do TCEConsultas, responsável por descrever as realizações dos casos de uso em um nível mais físico, foi produzido majoritariamente durante as seguintes fases do PU:\n\na) - Concepção e Elaboração.\nb) - Elaboração e Construção; RESPOSTA CERTA\nc) - Construção e Transição.\nd) - Transição e Concepção.\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'b') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+      do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 3° - Assinale a alternativa que apresenta a notação gráfica para modelagem de software que define um conjunto de diagramas para documentar e ajudar no design de sistemas de software, particularmente sistemas orientados a objetos.\n\na) - UML. | RESPOSTA CERTA\nb) - XML.\nc) - HTML.\nd) - GML.\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'a') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+      do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 4° - O diagrama da UML que é empregado para fazer modelagem de aspectos dinâmicos do sistema, que é essencialmente um gráfico de fluxo mostrando a concorrência entre esses fluxos, bem como as ramificações de controle, é chamado de\n\na) - diagrama de sequência.\nb) - diagrama de atividades. | RESPOSTA CERTA\nc) - diagrama de comunicação.\nd) - diagrama de máquina de estado.\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'b') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println("Resposta invalida digite novamente.");
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+       do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 5° - A norma ISO 9126 traz um conjunto de atributos de qualidade organizados em características e subcaraterísticas. A característica “Funcionalidade” diz respeito à capacidade do software de prover funcionalidades que satisfaçam as necessidades explícitas e implícitas dos usuários. Dentre as subcaracterísticas da característica ‘Funcionalidade’, aquela que corresponde à capacidade do software de interagir com um ou mais sistemas especificados é a:\n\na) - confiabilidade.\nb) - interoperabilidade. RESPOSTA CERTA\nc) - maturidade.\nd) - acessibilidade.\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'b') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+       do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 6° - Métricas de produto são métricas de previsão empregadas para medir atributos internos de um sistema de software. O tamanho de sistema, medido em linhas de código, ou o número de métodos associados a cada classe de objeto são exemplos de métricas de produto. Em relação às métricas estáticas de produto de software, assinale a afirmativa INCORRETA\n\na) - Índice Fog: é a medida do comprimento médio de palavras e sentenças em documentos. Quanto maior o valor do índice Fog de um documento, mais fácil é a sua compreensão. RESPOSTA CERTA\nb) - Complexidade ciclomática: é a medida da complexidade de controle de um programa. Essa complexidade de controle pode estar relacionada à compreensibilidade do programa.\nc) - Comprimento de código: é a medida do tamanho de um programa. Geralmente, quanto maior o tamanho do código de um componente, mais complexo e sujeito a erros o componente está.\nd) - Profundidade de aninhamento condicional: é a medida da profundidade de aninhamento de declarações if em um programa. Declarações if profundamente aninhadas são difíceis de entender e potencialmente sujeitas a erros.\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'a') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+       do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 7° - O tipo de teste de software que serve para garantir que todas ou algumas partes de um sistema estão dialogando e funcionando corretamente em conjunto é o teste\n\na) - de regressão.\nb) - de aceitação.\nc) - de integração. | RESPOSTA CERTA\nd) - de validação.\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'c') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println("Resposta invalida digite novamente.");
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+       do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 8° - A Linguagem de Modelagem Unificada (Unified Modeling Language – UML) é uma linguagem utilizada para modelar soluções de software, estruturas de aplicação, comportamento de sistemas e processos de negócio. Pertencem à linguagem UML, os seguintes diagramas, EXCETO:\n\na) - De estados.\nb) - De atividades.\nc) - De caso de uso.\nd) - Entidade relacionamento. RESPOSTA CERTA\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'd') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+       do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 9° - Sobre gerenciamento de software, é importante compreender que ainda existem muitos softwares legados que são críticos para o negócio. As organizações precisam decidir como obter o melhor retorno de seus investimentos, o que envolve fazer uma avaliação realista do legado e decidir sobre a estratégia mais adequada para a continuidade e evolução dos serviços organizacionais. Assinale a alternativa que NÃO apresenta uma opção estratégica:\n\na) - Descartar completamente o produto, caso o sistema não contribua mais de forma efetiva para os processos de negócio.\nb) - Deixar o produto inalterado e continuar com a manutenção regular.\nc) - Reestruturar o produto para melhorar sua manutenibilidade.\nd) - Manter o produto e interromper manutenções regulares. | RESPOSTA CERTA\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'd') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+       do {
+     System.out.printf(ANSI_BLACK +
+         "\n\nQUESTÃO 10° - No contexto do projeto orientado a objetos, é necessário que as classes de projeto colaborem umas com as outras. No entanto, essa colaboração deve ser mantida em um nível mínimo aceitável, pois, se todas as classes de projeto colaboram com todas as outras classes de projeto, o sistema é difícil de implementar, testar e manter com o decorrer do tempo. Assim, num projeto orientado a objetos, essa característica descrita, e que é muito desejável, é denominada\n\na) - alto acoplamento.\nb) - alta coesão.\nc) - baixo acoplamento. | RESPOSTA CERTA\nd) - baixa coesão.\n\nDigite a resposta certa: "
+         + ANSI_RESET);
+     resposta = ler.next().toLowerCase().charAt(0);
+     if (resposta == 'c') {
+       acertos++;
+       respostacerta();
+     } else if (resposta < 'a' || resposta > 'd') {
+       limpatela();
+       System.out.println(ANSI_RED + "Resposta invalida digite novamente." + ANSI_RESET);
+     } else {
+       respostaerrada();
+     }
+   } while (resposta < 'a' || resposta > 'd');
+
+       if (acertos == 10) {
+     System.out.printf(
+         ANSI_GREEN + "\n\nUau voce é um legitimo Engenheiro de Software. Voce acertou todas!!!!" + ANSI_RESET);
+   }
+   if (acertos > 5 && acertos < 10) {
+     System.out.printf(ANSI_BLUE + "\n\nMuito bem, voce é quase um engenheiro de software. Voce acertou " + acertos
+         + " de 10" + ANSI_RESET);
+   }
+   if (acertos == 5) {
+     System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
+         + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+   }
+   if (acertos < 5) {
+     System.out.printf(
+         ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
+             + "\nQue pena, voce tem que estudar mais, esta passando vergonha!" + ANSI_RESET);
+   }
+
+
+  }
+  // FIM DAS CONFIGURAÇÕES E DO TEMA ENGENHARIA DE SOFTWARE
+  
   public static void caseEsportes() {
     Scanner ler = new Scanner(System.in);
     int resposta = 0;
@@ -625,6 +1209,7 @@ public class projeto_PI {
   }
 
   public static void caseConhecimentosGerais() {
+
     Scanner ler = new Scanner(System.in);
     int resposta = 0;
     int acertos = 0;
@@ -819,6 +1404,7 @@ public class projeto_PI {
     }
   }
 
+  
   public static void funcaoTemas() {
     Scanner ler = new Scanner(System.in);
     Random aleatorio = new Random();
@@ -832,8 +1418,7 @@ public class projeto_PI {
       temasAleatorio();
     } else if (temas == 0) {
       limpatela();
-      System.out.printf("1 - Voltar ao Menu\n0 - Sair\n\nDigite sua opção: ");
-
+     
     }
 
     else {
@@ -842,22 +1427,21 @@ public class projeto_PI {
         case 2:
           caseEngenhariadeSoftware();
           funcaoCreditos();
-          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
           break;
 
         case 3:
           caseEsportes();
-          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
+          funcaoCreditos();
           break;
 
         case 4:
           caseHistoria();
-          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
+          funcaoCreditos();
           break;
 
         case 5:
           caseConhecimentosGerais();
-          System.out.printf("\n\n1 - Voltar ao Menu\n0 - Sair\nDigite sua opção: ");
+          funcaoCreditos();
           break;
       }
     }
