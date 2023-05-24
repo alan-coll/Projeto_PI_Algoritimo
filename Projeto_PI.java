@@ -13,7 +13,7 @@ public class projeto_PI {
     do {
       limpatela();
       System.out.printf(ANSI_BLUE +
-          "\n\n=============MENU DE OPÇÕES============\n\n\n    ======== ☛ 1- JOGAR ☚ ==========\n\n    ======== ☛ 2 - CRÉDITOS ☚=======\n\n    ======== ☛ 0 - SAIR ☚  =========\n\n Digite sua opção: "
+          "\n\n=============MENU DE OPÇÕES============\n\n\n    ======== ☛ 1 - JOGAR ☚ ==========\n\n    ======== ☛ 2 - CRÉDITOS ☚=======\n\n    ======== ☛ 0 - SAIR ☚  =========\n\n Digite sua opção: "
           + ANSI_BLUE);
       opcao = ler.nextInt();
 
@@ -762,15 +762,37 @@ public class projeto_PI {
 
   //TEMA ESPORTES E CONFIGURAÇÕES
   public static void caseEsportes() {
+    Random embaralhamento = new Random();
+    int configuracoes = embaralhamento.nextInt(1,5);
+    
+    if (configuracoes == 1) {
+        configEsportes1();
+   }
+    else if (configuracoes == 2) {
+      configEsportes2();
+    }
+    else if (configuracoes == 3) {
+      configEsportes3();
+    }
+    else if (configuracoes == 4) {
+      configEsportes4();
+    }
+  }
+  public static String[] questoesEsportes() {
+    String[] vetor_Esportes = {"\n\nTEMA ESPORTES\n\n",   "\nAnalise as afirmativas a seguir:\nI. O voleibol é uma modalidade esportiva rica em regras. Nesse esporte, não é permitido, por exemplo, fazer a bola passar sobre a rede, utilizar luvas durante o jogo e nem mesmo formar duplas para uma competição.\nII. A prática do vôlei não exige a realização de movimentos dos membros superiores, pois os movimentos repetitivos praticados pelos atletas desse esporte compreendem apenas os movimentos dos membros inferiores. Marque a alternativa CORRETA:\na)-   As duas afirmativas são verdadeiras\nb) - A afirmativa I é verdadeira, e a II é falsa.\nc) - A afirmativa II é verdadeira, e a I é falsa.\nd) - As duas afirmativas são falsas. RESPOSTA CERTA\n\nDigite a resposta certa: ", "\n\n\nO tênis de mesa constitui, em sua partida, de sets de:\na) -  7 pontos.\nb) -  9 pontos.\nc) -  11 pontos. RESPOSTA CERTA\nd) -  13 pontos.\n\nDigite a resposta certa: ",   "\n\n\nA prática do futebol de campo demanda uma série de equipamentos obrigatórios de acordo com o Manual de Regras de Futebol da FIFA 2021/2022. Dentre as opções a seguir, assinale a que apresenta o equipamento que não é obrigatório.\na) - Caneleira.\nb) - Calçado.\nc) - Camiseta sem manga. RESPOSTA CERTA\nd) - Calções.\n\nDigite a resposta certa: ",   "\n\nA Capoeira é considerada por seus praticantes como luta, dança, jogo, arte, música, expressão corporal e cultural, dentre outras. Acerca dos fatos históricos que envolvem a prática de Capoeira, é INCORRETO dizer que foi:\na) - considerada crime previsto no Código Penal brasileiro.\nb) - homologada pelo Ministério da Educação e Cultura como modalidade desportiva.\nc) - incluída pelo Comitê Olímpico Internacional no programa dos Jogos Olímpicos de Verão.  RESPOSTA CERTA\nd) - registrada pelo Instituto do Patrimônio Histórico e Artístico Nacional como patrimônio cultural brasileiro.\n\nDigite a resposta certa: ",    "\n\nO futebol, esporte que é considerado a paixão nacional e, sem dúvidas, o mais popular do mundo, começou a ser praticado:\na) - Na Inglaterra. RESPOSTA CERTA\nb) - Na França.\nc) - Nos Estados Unidos.\nd) - No Brasil.\n\nDigite a resposta certa: ",  "\n\n\nО quе rерrеѕеntа о ѕímbоlо dоѕ сіnсо аnéіѕ dаѕ Оlіmрíаdаѕ?\na) - Аѕ сіnсо соrеѕ рrіnсіраіѕ ехіѕtеntеѕ.\nb) - Оѕ сіnсоѕ соntіnеntеѕ hаbіtаdоѕ nо mundо. RESPOSTA CERTA\nc) - Оѕ сіnсоѕ рrіnсіраіѕ раíѕеѕ vеnсеdоrеѕ.\nd) - Аѕ сіnсо mаіоrеѕ nаçõеѕ dо mundо.\n\nDigite a resposta certa: ",   "\n\n\nQual país é o único que participou de todas as Copas do Mundo?\na) - México\nb) - Alemanha\nc) - Espanha\nd) – Brasil RESPOSTA CERTA\n\nDigite a resposta certa: ",   "\n\n\nAs primeiras olimpíadas aconteceram em que país?\na) - França\nb) - Inglaterra\nc) - Grécia RESPOSTA CERTA\nd) - Estados Unidos da América\n\nDigite a resposta certa: ",    "\n\nQUESTÃO 9°\nQue seleção venceu a Copa do Mundo, em 1998?\na) - Brasil\nb) - França RESPOSTA CERTA\nc) - Alemanha\nd) – Argentina\n\nDigite a resposta certa: ",   "\n\n\nQual o time mais famoso da cidade italiana de Turín?\na) – Torino\nb) - Milan\nc) -  Lazio\nd) – Juventus RESPOSTA CERTA\n\nDigite a resposta certa: "};
+return vetor_Esportes;
+  }
+
+  public static void configEsportes1() {
     String vetor[] = questoesEsportes();
     Scanner ler = new Scanner(System.in);
     int resposta = 0;
     int acertos = 0;
     limpatela();
-    System.out.printf("\n\nTema ESPORTES \n\n");
+    System.out.printf(vetor[0]);
 
     do {
-      System.out.printf(ANSI_BLACK +vetor[0]+ ANSI_RESET);
+      System.out.printf(ANSI_BLACK +vetor[1]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
       if (resposta == 'd') {
         acertos++;
@@ -784,7 +806,7 @@ public class projeto_PI {
     } while (resposta < 'a' || resposta > 'd');
 
     do {
-      System.out.printf(ANSI_BLACK +vetor[1]+ ANSI_RESET);
+      System.out.printf(ANSI_BLACK +vetor[2]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
       if (resposta == 'c') {
         acertos++;
@@ -798,21 +820,7 @@ public class projeto_PI {
     } while (resposta < 'a' || resposta > 'd');
 
     do {
-      System.out.printf(ANSI_BLACK + vetor[2] + ANSI_RESET);
-      resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'c') {
-        acertos++;
-        respostacerta();
-      } else if (resposta < 'a' || resposta > 'd') {
-        limpatela();
-        respostainvalida();
-      } else {
-        respostaerrada();
-      }
-    } while (resposta < 'a' || resposta > 'd');
-
-    do {
-      System.out.printf(ANSI_BLACK +vetor[3]+ ANSI_RESET);
+      System.out.printf(ANSI_BLACK + vetor[3] + ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
       if (resposta == 'c') {
         acertos++;
@@ -828,7 +836,7 @@ public class projeto_PI {
     do {
       System.out.printf(ANSI_BLACK +vetor[4]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'a') {
+      if (resposta == 'c') {
         acertos++;
         respostacerta();
       } else if (resposta < 'a' || resposta > 'd') {
@@ -842,7 +850,7 @@ public class projeto_PI {
     do {
       System.out.printf(ANSI_BLACK +vetor[5]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'b') {
+      if (resposta == 'a') {
         acertos++;
         respostacerta();
       } else if (resposta < 'a' || resposta > 'd') {
@@ -856,7 +864,7 @@ public class projeto_PI {
     do {
       System.out.printf(ANSI_BLACK +vetor[6]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'd') {
+      if (resposta == 'b') {
         acertos++;
         respostacerta();
       } else if (resposta < 'a' || resposta > 'd') {
@@ -870,7 +878,7 @@ public class projeto_PI {
     do {
       System.out.printf(ANSI_BLACK +vetor[7]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'c') {
+      if (resposta == 'd') {
         acertos++;
         respostacerta();
       } else if (resposta < 'a' || resposta > 'd') {
@@ -884,7 +892,7 @@ public class projeto_PI {
     do {
       System.out.printf(ANSI_BLACK +vetor[8]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
-      if (resposta == 'b') {
+      if (resposta == 'c') {
         acertos++;
         respostacerta();
       } else if (resposta < 'a' || resposta > 'd') {
@@ -897,6 +905,20 @@ public class projeto_PI {
 
     do {
       System.out.printf(ANSI_BLACK +vetor[9]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[10]+ ANSI_RESET);
       resposta = ler.next().toLowerCase().charAt(0);
       if (resposta == 'd') {
         acertos++;
@@ -925,11 +947,498 @@ public class projeto_PI {
           + "\nQue pena, voce tem que praticar mais esportes, esta passando vergonha!" + ANSI_RESET);
     }
   }
-  public static String[] questoesEsportes() {
-    String[] vetor_Esportes = {"QUESTÃO 1°\nAnalise as afirmativas a seguir:\nI. O voleibol é uma modalidade esportiva rica em regras. Nesse esporte, não é permitido, por exemplo, fazer a bola passar sobre a rede, utilizar luvas durante o jogo e nem mesmo formar duplas para uma competição.\nII. A prática do vôlei não exige a realização de movimentos dos membros superiores, pois os movimentos repetitivos praticados pelos atletas desse esporte compreendem apenas os movimentos dos membros inferiores. Marque a alternativa CORRETA:\na)-   As duas afirmativas são verdadeiras\nb) - A afirmativa I é verdadeira, e a II é falsa.\nc) - A afirmativa II é verdadeira, e a I é falsa.\nd) - As duas afirmativas são falsas. RESPOSTA CERTA\n\nDigite a resposta certa: ", "\n\nQUESTÃO 2°\nO tênis de mesa constitui, em sua partida, de sets de:\na) -  7 pontos.\nb) -  9 pontos.\nc) -  11 pontos. RESPOSTA CERTA\nd) -  13 pontos.\n\nDigite a resposta certa: ",   "\n\nQUESTÃO  3°\nA prática do futebol de campo demanda uma série de equipamentos obrigatórios de acordo com o Manual de Regras de Futebol da FIFA 2021/2022. Dentre as opções a seguir, assinale a que apresenta o equipamento que não é obrigatório.\na) - Caneleira.\nb) - Calçado.\nc) - Camiseta sem manga. RESPOSTA CERTA\nd) - Calções.\n\nDigite a resposta certa: ",   "\n\nQUESTÃO 4°\nA Capoeira é considerada por seus praticantes como luta, dança, jogo, arte, música, expressão corporal e cultural, dentre outras. Acerca dos fatos históricos que envolvem a prática de Capoeira, é INCORRETO dizer que foi:\na) - considerada crime previsto no Código Penal brasileiro.\nb) - homologada pelo Ministério da Educação e Cultura como modalidade desportiva.\nc) - incluída pelo Comitê Olímpico Internacional no programa dos Jogos Olímpicos de Verão.  RESPOSTA CERTA\nd) - registrada pelo Instituto do Patrimônio Histórico e Artístico Nacional como patrimônio cultural brasileiro.\n\nDigite a resposta certa: ",    "\n\nQUESTÃO 5°\nO futebol, esporte que é considerado a paixão nacional e, sem dúvidas, o mais popular do mundo, começou a ser praticado:\na) - Na Inglaterra. RESPOSTA CERTA\nb) - Na França.\nc) - Nos Estados Unidos.\nd) - No Brasil.\n\nDigite a resposta certa: ",  "\n\nQUESTÃO 6°\nО quе rерrеѕеntа о ѕímbоlо dоѕ сіnсо аnéіѕ dаѕ Оlіmрíаdаѕ?\na) - Аѕ сіnсо соrеѕ рrіnсіраіѕ ехіѕtеntеѕ.\nb) - Оѕ сіnсоѕ соntіnеntеѕ hаbіtаdоѕ nо mundо. RESPOSTA CERTA\nc) - Оѕ сіnсоѕ рrіnсіраіѕ раíѕеѕ vеnсеdоrеѕ.\nd) - Аѕ сіnсо mаіоrеѕ nаçõеѕ dо mundо.\n\nDigite a resposta certa: ",   "\n\nQUESTÃO 7°\nQual país é o único que participou de todas as Copas do Mundo?\na) - México\nb) - Alemanha\nc) - Espanha\nd) – Brasil RESPOSTA CERTA\n\nDigite a resposta certa: ",   "\n\nQUESTÃO 8°\nAs primeiras olimpíadas aconteceram em que país?\na) - França\nb) - Inglaterra\nc) - Grécia RESPOSTA CERTA\nd) - Estados Unidos da América\n\nDigite a resposta certa: ",    "\n\nQUESTÃO 9°\nQue seleção venceu a Copa do Mundo, em 1998?\na) - Brasil\nb) - França RESPOSTA CERTA\nc) - Alemanha\nd) – Argentina\n\nDigite a resposta certa: ",   "\n\nQUESTÃO 10°\nQual o time mais famoso da cidade italiana de Turín?\na) – Torino\nb) - Milan\nc) -  Lazio\nd) – Juventus RESPOSTA CERTA\n\nDigite a resposta certa: "};
-return vetor_Esportes;
+  public static void configEsportes2() {
+    String vetor[] = questoesEsportes();
+    Scanner ler = new Scanner(System.in);
+    int resposta = 0;
+    int acertos = 0;
+    limpatela();
+    System.out.printf(vetor[0]);
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[7]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[4]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK + vetor[9] + ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[5]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[10]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[3]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[8]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[1]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[6]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[2]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    if (acertos == 10) {
+      System.out.printf(ANSI_GREEN + "\n\nUau voce sabe tudo sobre esportes. Voce acertou todas!!!!" + ANSI_RESET);
+    }
+    if (acertos > 5 && acertos < 10) {
+      System.out.printf(ANSI_GREEN + "\n\nMuito bem, voce é um especialista em esportes!!. Voce acertou " + acertos
+          + " de 10" + ANSI_RESET);
+    }
+    if (acertos == 5) {
+      System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
+          + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+    }
+    if (acertos < 5) {
+      System.out.printf(ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
+          + "\nQue pena, voce tem que praticar mais esportes, esta passando vergonha!" + ANSI_RESET);
+    }
   }
-  
+  public static void configEsportes3() {
+    String vetor[] = questoesEsportes();
+    Scanner ler = new Scanner(System.in);
+    int resposta = 0;
+    int acertos = 0;
+    limpatela();
+    System.out.printf(vetor[0]);
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[5]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[10]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK + vetor[4] + ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[9]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[1]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[7]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[8]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[3]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[6]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[2]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    if (acertos == 10) {
+      System.out.printf(ANSI_GREEN + "\n\nUau voce sabe tudo sobre esportes. Voce acertou todas!!!!" + ANSI_RESET);
+    }
+    if (acertos > 5 && acertos < 10) {
+      System.out.printf(ANSI_GREEN + "\n\nMuito bem, voce é um especialista em esportes!!. Voce acertou " + acertos
+          + " de 10" + ANSI_RESET);
+    }
+    if (acertos == 5) {
+      System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
+          + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+    }
+    if (acertos < 5) {
+      System.out.printf(ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
+          + "\nQue pena, voce tem que praticar mais esportes, esta passando vergonha!" + ANSI_RESET);
+    }
+  }
+  public static void configEsportes4() {
+    String vetor[] = questoesEsportes();
+    Scanner ler = new Scanner(System.in);
+    int resposta = 0;
+    int acertos = 0;
+    limpatela();
+    System.out.printf(vetor[0]);
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[4]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[8]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK + vetor[2] + ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[9]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[1]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'a') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[10]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[6]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[5]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'c') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[3]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'b') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    do {
+      System.out.printf(ANSI_BLACK +vetor[7]+ ANSI_RESET);
+      resposta = ler.next().toLowerCase().charAt(0);
+      if (resposta == 'd') {
+        acertos++;
+        respostacerta();
+      } else if (resposta < 'a' || resposta > 'd') {
+        limpatela();
+        respostainvalida();
+      } else {
+        respostaerrada();
+      }
+    } while (resposta < 'a' || resposta > 'd');
+
+    if (acertos == 10) {
+      System.out.printf(ANSI_GREEN + "\n\nUau voce sabe tudo sobre esportes. Voce acertou todas!!!!" + ANSI_RESET);
+    }
+    if (acertos > 5 && acertos < 10) {
+      System.out.printf(ANSI_GREEN + "\n\nMuito bem, voce é um especialista em esportes!!. Voce acertou " + acertos
+          + " de 10" + ANSI_RESET);
+    }
+    if (acertos == 5) {
+      System.out.printf(ANSI_YELLOW + "\n\nVoce acertou " + acertos + " de 10."
+          + " Voce esta na media mas pode melhorar." + ANSI_RESET);
+    }
+    if (acertos < 5) {
+      System.out.printf(ANSI_RED + "\n\nVoce acertou " + acertos + " de 10"
+          + "\nQue pena, voce tem que praticar mais esportes, esta passando vergonha!" + ANSI_RESET);
+    }
+  }
   
   //FIM DO TEMA ESPORTES
 
