@@ -11,9 +11,9 @@ public class projeto_PI {
 
     int opcao = 0;
     do {
-      limpatela();
+      
       System.out.printf(ANSI_BLUE +
-          "\n\n=============MENU DE OPÇÕES============\n\n\n    ======== ☛ 1 - JOGAR ☚ ==========\n\n    ======== ☛ 2 - CRÉDITOS ☚=======\n\n    ======== ☛ 0 - SAIR ☚  =========\n\n Digite sua opção: "
+          "\n\n\n\n\n\n\n\n\n\n=============MENU DE OPÇÕES============\n\n\n    ======== ☛ 1 - JOGAR ☚ ==========\n\n    ======== ☛ 2 - CRÉDITOS ☚ ======\n\n    ======== ☛ 0 - SAIR ☚  =========\n\n Digite sua opção: "
           + ANSI_BLUE);
       opcao = ler.nextInt();
 
